@@ -8,7 +8,13 @@ function wright(a) {
 	})
 }
 
-fs.readFile('main.py', (err, data)=>{
+
+fs.readFile('min.py', (err, data)=>{
+	
+	if(err){
+		console.log(err);
+	}
+
 	data = data.toString();
 	let renderd = data.toString()
 		.replace("{", " ")
